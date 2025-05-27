@@ -106,7 +106,7 @@ class ImageProcessor():
 
 
    def saveImage(self):
-       '"guarda una copia del archivo en una subcarpeta"
+       "guarda una copia del archivo en una subcarpeta"
        path = os.path.join(self.dir, self.save_dir)
        if not(os.path.exists(path) or os.path.isdir(path)):
            os.mkdir(path)
@@ -139,4 +139,5 @@ btn_bw.clicked.connect(workimage.do_bw)
 
 
 app.exec()
+
 
